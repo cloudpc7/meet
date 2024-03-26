@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
 /* CSS reset stylesheet */
 
 /* - Red: hsl(0, 78%, 62%)
@@ -25,7 +26,7 @@
     --fs-secondary: 1.125rem;
     --fs-h2: 1rem;
     --fw-regular: 500;  
-    --fw-bold: 600;
+    --fw-bold: 900;
   }
   /* css reset  */
   /* /* Box sizing rules */
@@ -101,4 +102,75 @@
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
+  }
+
+  body {
+    min-height: 100vh;
+    display: grid;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .people {
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 1rem; 
+  }
+
+  .hero-left {
+    grid-column: 1;
+  }
+
+  .hero-right {
+    grid-column: 2;
+  }
+
+  .greetings {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 110%;
+    color: hsla(239, 21%, 20%, 1);
+  }
+
+  .article {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 162.5%;
+    color: hsla(239, 10%, 57%, 1);
+  }
+
+  .download, .btn {
+    border: none;
+    border-radius: 1.8125rem;
+    color: #fff;
+  }
+
+  .version {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .download {
+    padding: 1.1em 2.9rem;
+    background-color: hsla(192, 37%, 48%, 1);
+  }
+
+  .btn {
+    padding: 1.12rem 2.12rem;
+    background-color: hsla(267, 34%, 53%, 1);
   }
