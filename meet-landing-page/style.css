@@ -174,3 +174,106 @@
     padding: 1.12rem 2.12rem;
     background-color: hsla(267, 34%, 53%, 1);
   }
+
+  /* main container div */
+
+  .container {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    align-items: center;
+  }
+
+  .line-style {
+    max-width: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .line {
+    height: 5.25rem;
+    opacity: 0.25;
+    border-left: 1px solid #87879D;
+  }
+
+
+  .number {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(135,135, 157, 0.25);
+  }
+
+  .group-chat {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        " one one"
+        " two two";
+    gap: 2rem;
+  }
+
+  .video-chat {
+    border-radius: 0.5rem;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .built {
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 162.5%;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: hsl(192, 37%, 48%, 1);
+  }
+
+  .brand {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 112.5%;
+    color: hsla(239,21%,20%,1);
+  }
+
+  .slogan {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 162.5%;
+    color: hsla(239,10%,57%,1);
+  }
+
+  footer {
+    background-color: hsl(192,37%,48%);
+  }
+
+  .footer-img {
+    width: 100%;
+    height: auto;
+    opacity: 0.1045;
+    z-index: -1;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
