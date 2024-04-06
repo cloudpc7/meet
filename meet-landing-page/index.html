@@ -7,24 +7,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
   <header>
     <img class="logo" src="./assets/logo.svg" alt="meet"/>
-      <div class="people">
-        <img class="hero-left" src="./assets/desktop/image-hero-left.png" alt="individual people"/>
-        <img class="hero-right" src="./assets/desktop/image-hero-right.png"/>
-      </div>
+    <img class="people" src="./assets/tablet/image-hero.png" />
       <div class="greetings">
-        <h1 class="title">Group Chat for Everyone</h1>
-        <p class="article">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-      </div>
-      <div class="version">
-        <button class="download">Download v1.3</button>
-        <button class="btn">What is it?</button>
+        <img class="desktop-people" src="./assets/desktop/image-hero-left.png" alt="individual people"/>
+        <div class="hero-content">
+          <h1 class="title">Group Chat <br/>for Everyone</h1>
+          <p class="article">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+          <div class="version">
+            <button class="download">Download <span class="version-number">v1.3</span></button>
+            <button class="btn">What is it?</button>
+          </div>
+        </div>
+        <img class="desktop-people" src="./assets/desktop/image-hero-right.png" alt="individual people"/> 
       </div>
   </header> 
   <main class="container">
@@ -40,28 +41,31 @@
     </div>
     <div class="about-content">
       <p class="built">Built for modern use</p>
-      <h2 class="brand">Smarter meetings, all in one place</h2>
+      <h2 class="brand">Smarter meetings,<br/> all in one place</h2>
       <p class="slogan">
-        Send messages, share files, show your screen, and record your meetings — all in one 
-        workspace. Control who can join with invite-only team access, data encryption, and data export.
+        Send messages, share files, show your screen, and record your meetings — all in one workspace.
+         Control who can join with invite-only team access, data encryption, and data export.
       </p>
-    </div>
-    <div class="line-style">
-      <div class="line"></div>
-      <div class="number">02</div>
     </div>
   </main>
   <footer>
-    <picture class="footer-img">
-      <src media="min-width: 70rem" srcset="./assets/desktop/image-footer.jpg">
-      <img src="./assets/mobile/image-footer.jpg"/>
-    </picture>
-    <div class="content">
-      <h2 class="footer-title">Experience more together</h2>
-      <p class="footer-article">
-        Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-      </p>
-      <button class="btn">Download v1.3</button>
+    <div class="line-style">
+      <div class="line-two"></div>
+      <div class="number-two">02</div>
+    </div>
+    <div class="footer-feature">
+      <picture class="footer-img">
+        <source media="(min-width:90rem)" srcset="./assets/desktop/image-footer.jpg">
+        <source media="(min-width:48rem)" srcset="./assets/tablet/image-footer.jpg">
+        <img src="./assets/mobile/image-footer.jpg" alt="person using laptop">
+      </picture>
+      <div class="content">
+        <h2 class="footer-title">Experience more together</h2>
+        <p class="footer-article">
+          Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+        </p>
+        <button class="footer-btn">Download <span>v1.3</span></button>
+      </div>
     </div>
   </footer>
 </body>
