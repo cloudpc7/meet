@@ -219,6 +219,8 @@ header {
 .line-two {
   width: 0.0625rem;
   height: 5.25rem;
+  position: relative;
+  bottom: -1.75rem;
   border: 0.0625rem solid #87879D;
   opacity: 0.25;
 }
@@ -237,6 +239,11 @@ header {
   background-color: #fff;
 }
 
+
+.number-two {
+  position: relative;
+  bottom: -1.75rem;
+}
 
 .group-chat {
   display: grid;
@@ -261,12 +268,10 @@ header {
 
 footer {
   max-width: 23.4375rem;
-  max-height: 33.75025rem;
 }
 
 .footer-feature {
   position: relative;
-  top: -1.75rem;
   background-color: var(--clr-aqua);
   display: flex;
   justify-content: center;
