@@ -131,6 +131,7 @@ p {
   border-radius: 0.5rem;
 }
 
+
 .footer-img {
   position: relative;
   z-index: 2;
@@ -260,6 +261,7 @@ header {
 
 footer {
   max-width: 23.4375rem;
+  max-height: 33.75025rem;
 }
 
 .footer-feature {
@@ -411,13 +413,6 @@ span {
 
   footer {
     max-width: 90rem;
-  }
-
-  .footer-feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .content {
